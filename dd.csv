@@ -1,0 +1,8 @@
+film_in_stock_invoker	def	study	film_in_stock_invoker	PROCEDURE		\N	\N	\N	\N	\N	\N	\N	\N	SQL	BEGIN\
+	  SELECT \
+    deptname \
+  FROM\
+    dept \
+  WHERE deptno = p_deptno ;\
+  SELECT FOUND_ROWS() INTO p_film_count;\
+END	\N	\N	SQL	NO	CONTAINS SQL	\N	INVOKER	2017-01-11 22:17:54	2017-01-11 22:17:54	ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION		root@localhost	utf8	utf8_general_ci	latin1_swedish_ci
